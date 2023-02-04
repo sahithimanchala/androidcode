@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EMI Application</string>
+    <string name="emi_calculator">EMI CALCULATOR</string>
+    <string name="time_in_years">Time in Years :</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EMICALCULATOR"
+        android:text="@string/emi_calculator"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+         />
+
+    <EditText
+        android:id="@+id/Totalprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EMICALCULATOR"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints=""
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_attach_money_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:text="Total Price :"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Rateofinterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Totalprice"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_auto_graph_24"
+        android:drawablePadding="10dp"
+        android:hint="Rate of Interest :"
+        android:importantForAutofill="no"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rateofinterest"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_access_time_24"
+        android:drawablePadding="10dp"
+        android:importantForAutofill="no"
+        android:padding="20dp"
+        android:text="@string/time_in_years"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#25dddddd"
+        android:textColorHint="@color/white"
+        android:onClick="btnsum"
+        android:text="CALCULATE"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emi"
+        android:layout_below="@+id/button"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:text="Monthly EMI :"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableStart="@drawable/baseline_attach_money_24"
+        android:drawablePadding="10dp"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints=""
+         />
+
+    <EditText
+        android:id="@+id/interestamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableStart="@drawable/baseline_attach_money_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:text="Total Amount with interest :"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize"
+        android:autofillHints="" />
+
+
+
+
+</RelativeLayout>
